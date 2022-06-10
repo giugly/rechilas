@@ -1,0 +1,184 @@
+﻿
+<html>
+
+  <head>
+
+	<title>Recomendaciones chilas</title>
+
+  </head>
+
+  <body>
+
+    <header>
+        <div>
+            <ul id="menu">
+                <li id="titulo">Recomendaciones chilas</li>
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="tira-h">
+            <li><a href="base.html">Inicio</a></li>
+            <li><a href="registrous.html">Registrarse</a></li>
+            <li>
+                <a href="registrocan.html">Recomendar</a>
+            </li>
+
+            <li>
+                <a href="canciones.php">Recomendaciones</a>
+            </li>
+
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+
+    <ul id="menu">
+        <h3><li id="titulo">¿Que es recomendaciones chilas?</li></h3>
+    </ul>
+		<article>
+		 Recomendaciones Chilas, es una pagina web, que surgio como un proyecto escolar, partiendo de la inquietud de querer dar resolucion de la problematica de:
+		  <ul type="circle">
+            <li>Escuchar las mismas canciones en bucle.
+            <li>Las recomendaciones que se brindan, no son del agrado de las personas.
+	      </ul>
+		</article>
+
+		<article>
+            <p id="titulo">¿Como funciona recomendaciones chilas?</p>
+ 	      Recomendaciones chilas te da la posibilidad de recibir recomendaciones musicales de otros usuarios, y al mismo tiempo, recomendar bandas, artistas, canciones o albumes q te gusten demasiado! 
+		</article>
+     </section>
+
+     <footer>
+		<p><i>Encuentranos en spotify e instagram como <a id="link" href=https://www.instagram.com/recomendaciones_shilas/>@recomendaciones_shilas</A></i></p>
+         
+        <a id="link" href="base.html"> <img id="flecha" src="img/regresar.png"  style=" position:fixed; bottom:  0px; left: 0px;"  width="55" height="55">
+      
+     </footer>
+     </section>
+  </body>
+</html>
+
+<style>
+
+    @font-face{
+        font-family:titulospunk;
+        src: url(fuentes/ShonenPunk-negritas.ttf);
+    }
+
+    @font-face{
+        font-family:textonormal;
+        src: url(fuentes/ugly.otf);
+    }
+
+    @font-face{
+        font-family:links;
+        src: url(fuentes/paf.ttf);
+    }
+    @font-face{
+        font-family:WillRock;
+        src: url(fuentes/WillRock.ttf);
+    }
+
+    body{
+        background: #090A09;
+        color: #FFFFFF;
+        padding: 0px;
+        background-image: url(img/albumesinfo.PNG);
+        background-size: cover;
+    }
+
+    *::selection {
+        background-color: white;
+        color: black;
+    }
+
+    header{
+        font-family:titulospunk;
+        font-size: 50px;
+        margin: 50px auto;
+        width: 1300px;
+    }
+    
+
+    #menu{
+        
+        text-align: center;
+        
+    }
+
+    #menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    #menu li{
+        display: inline-block;
+        padding: 10px
+        vertical-align: middle;
+    }
+
+    header div ul #menu{
+        color: white;
+        text-decoration: none;
+    }
+
+    nav{
+       max-width: 1200px;
+       margin: auto;
+       font-family: WillRock;
+       font-size: 20px;
+       margin-top: 50px;
+       background-image: linear-gradient(to right,#94B3FD,#B983FF);
+    }
+
+    .tira-h{
+       list-style: none;
+       display: flex;
+       justify-content: space-around;
+    }
+
+    .tira-h > li > a{
+       display: block;
+       padding: 15px 20px;
+       color: white;
+       text-decoration: none;
+    }
+
+    .tira-h > li:hover{
+       background: #4F8DEC;
+    }
+
+    .tira-v{
+       position: absolute;
+       display: none;
+       list-style: none;
+       width: 200px;
+       background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .tira-h li:hover .tira-v{
+       display: block;
+    }
+
+    #lista{
+        margin-right: 15%;
+        margin-left: 100px;
+    }
+
+    article,footer{
+        font-family:links;
+        font-size: 25px;
+        padding: 0%;
+        margin: 5% auto;
+        width: 70%;
+        
+    }
+
+    h3{
+     font-size: 25px;
+     font-family: WillRock;
+     text-align: center;
+
+    }
+</style>

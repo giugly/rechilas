@@ -1,0 +1,257 @@
+<html>
+  <head>
+	<title>Registro de cancion</title>
+  </head>
+  <body>
+
+    <header>
+        <div>
+            <ul id="menu">
+                <li id="titulo">Recomendaciones chilas</li>
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="tira-h">
+            <li><a href="base.html">Inicio</a></li>
+            <li><a href="registrous.html">Registrarse</a></li>
+            <li>
+                <a href="registrocan.html">Recomendar</a>
+            </li>
+
+            <li>
+                <a href="canciones.php">Recomendaciones</a>
+            </li>
+
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+
+    <form id="formulario" method="post">
+   <h1>Registro de cancion</h1>
+   <div class="contenedor">
+
+   <div class="input-contenedor">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required="">
+   </div>
+
+   <div class="input-contenedor">
+         <label for="artistx">Artistx:</label>
+         <input type="text" name="artistx" id="artistx" required="">
+   </div>
+
+   <div class="input-contenedor">
+         <label for="genero">Genero:</label>
+         <input type="text" name="genero" id="genero" required="">
+   </div>
+
+   <div class="input-contenedor">
+         <label for="link">Link de la cancion:</label>
+         <input type="url" name="link" id="link" required="">
+   </div>
+   <input type="submit" value="Registrar cancion" class="button">
+   </form>
+   <script src="registrocan.js"></script>
+  </body>
+</html>
+
+<style>
+    @font-face{
+        font-family:titulospunk;
+        src: url(fuentes/ShonenPunk-negritas.ttf);
+    }
+
+    @font-face{
+        font-family:textonormal;
+        src: url(fuentes/ugly.otf);
+    }
+
+    @font-face{
+        font-family:links;
+        src: url(fuentes/paf.ttf);
+    }
+    @font-face{
+        font-family:WillRock;
+        src: url(fuentes/WillRock.ttf);
+    }
+
+
+    *::selection {
+        background-color: #3868D5;
+        color: black;
+    }
+
+    body {
+        font-family:textonormal;
+        background-image:linear-gradient(to right,#BEDCFA,#98ACF8,#505BDA,#0033C7);
+        margin-bottom: 80px;
+        color: #FFFFFF;
+        padding: 0px;
+    }
+
+
+    * {
+        box-sizing: border-box;
+    
+    }
+
+    header{
+        font-family:titulospunk;
+        font-size: 50px;
+        margin: 50px auto;
+        width: 1300px;
+    }
+
+    #menu{
+        padding: 5px ;
+        text-align: center;
+    }
+
+    #menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    #menu li{
+        display: inline-block;
+        padding: 10px
+        vertical-align: middle;
+    }
+
+    header div ul #menu{
+        color: white;
+        text-decoration: none;
+    }
+
+    nav{
+       max-width: 1200px;
+       margin: auto;
+       background-color: black;
+       font-size: 20px;
+       margin-top: 50px;
+       font-family: WillRock;
+       color:white;
+       box-shadow: 5px 5px 10px #000000;
+    }
+
+    .tira-h{
+       list-style: none;
+       display: flex;
+       justify-content: space-around;
+       border-radius: 5px;
+    }
+
+    .tira-h > li > a{
+       display: block;
+       padding: 15px 20px;
+       color: white;
+       text-decoration: none;
+
+    }
+
+    .tira-h > li:hover{
+       background-image:linear-gradient(to right,#98ACF8,#505BDA,#0033C7);
+    }
+
+    .tira-h li:hover .tira-v{
+       display: block;
+    }
+
+
+
+.contenedor{
+    width: 100%;
+    padding: 20px;
+    
+    }
+form{
+    background: #000000;
+    color: white;
+    margin-top: 150px;
+    padding: 8px;
+    font-family: links;
+    margin: 0 auto;
+    width:800px;
+    box-shadow: 5px 5px 10px #000000;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    font-family:titulospunk;
+    font-size: 40px;
+    }
+label{
+    margin: 5px auto;
+    float:none;
+    width: 600px;
+    font-size: 20px;
+    display:block;
+    }
+
+input[type="text"],
+input[type="password"],
+input[type="url"]{
+    font-family:links;
+    font-size: 20px;
+
+    padding:3px;
+    margin: 5px auto;
+    border: none;
+    border-radius:5px;
+    margin-bottom: 20px;
+    width: 600px  ;
+    height:35px;
+    display:block;
+    float:none;
+}
+
+
+.button{ 
+    background-image:linear-gradient(to right,#BEDCFA,#98ACF8,#505BDA,#0033C7);
+    color: black;
+    font-family:links;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px auto;
+    width: 250px  ;
+    height:35px;
+    align-items:center;
+    display:block;
+    border: 0px solid purple;
+    border-radius:  3px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.button:hover{ 
+    background-image:linear-gradient(to right,#BEDCFA,#98ACF8,#0033C7,#505BDA);
+    color: black;
+}
+
+
+p{
+
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.link:hover{
+     color: black;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    border-radius:5px;
+    font-family:textonormal;
+    font-size: 20px;
+}
+
+</style>

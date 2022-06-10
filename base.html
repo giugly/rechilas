@@ -1,0 +1,204 @@
+<html>
+  <head>
+	<title>Recomendaciones chilas</title>
+  </head>
+
+  <body>
+    <div>
+     <header>
+     	<div>
+        <ul id="menu">
+          <li id="titulo">Recomendaciones Chilas</li>
+        </ul>
+      </div>
+     </header> 
+    <nav>
+        <ul class="tira-h">
+            <li><a id="inicio" href="base.html">Inicio</a></li>
+            <li><a id="registro" href="registrous.html">Registrarse</a></li>
+            <li>
+                <a id="recomendar" href="registrocan.html">Recomendar</a>
+            </li>
+            <li>
+                <a  id="recomendaciones" href="canciones.php">Recomendaciones</a>
+            </li>
+            <li><a id="info" href="info.html">Info</a></li>
+        </ul>
+    </nav>
+
+    <section>
+		  <div>
+			  Estas cansadx de escuchar siempre las mismas rolas y que no te gusten las recomendaciones que te dan?
+		  </div>
+
+		  <article>
+            En esta pagina podras recibir recomendaciones musicales de otrxs usuarixs, y al mismo tiempo, recomendar canciones que te gusten mucho!
+		  </article>
+    </section>
+
+    <footer>
+		<p>Encuentranos en instagram y spotify como:</p>
+        <ul id="redes">
+          <li><img src="img/instagram.png" width="50" height="50"></li>
+          <li><img src="img/spotify.jpg" width="50" height="50"></li>
+          <li><a id="link-ig" href=https://www.instagram.com/recomendaciones_shilas/>@recomendaciones_shilas</a></li>   
+        </ul>
+    </footer>
+    
+    <div id="logo"align=center>
+        <img src="img/logo.png"  width="200" height="200">
+  </body>
+</html>
+
+<style>
+
+@font-face{
+  font-family:titulospunk;
+    src: url(fuentes/ShonenPunk-negritas.ttf);
+    }
+
+@font-face{
+  font-family:textonormal;
+    src: url(fuentes/ugly.otf);
+    }
+
+@font-face{
+    font-family:links;
+    src: url(fuentes/paf.ttf);
+    }
+@font-face{
+    font-family:WillRock;
+    src: url(fuentes/WillRock.ttf);
+    }
+
+
+body{
+    
+    color: #FFFFFF;
+    padding: 0px;
+    background: #090A09;
+}
+
+*::selection {
+    background-color: white;
+    color: black;
+}
+
+
+
+header{
+    font-family:titulospunk;
+    font-size: 50px;
+    margin: 50px auto;
+    width: 1300px;
+    background: #090A09;
+   
+}
+
+#menu{
+    padding: 5px ;
+    text-align: center;
+
+    
+    
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+}
+#menu li{
+    display: inline-block;
+    padding: 10px
+    vertical-align: middle;
+}
+
+header div ul #menu{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+   max-width: 1200px;
+   margin: auto;
+   font-size: 20px;
+   margin-top: 50px;
+   font-family: WillRock;
+   background-image: linear-gradient(to left,#871DE5,#D346F5,#277FE9);
+   color: black;
+}
+
+.tira-h{
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+}
+
+.tira-h > li > a{
+   display: block;
+   padding: 15px 20px;
+   color: white;
+   text-decoration: none;
+}
+
+#inicio:hover{
+   background-image: linear-gradient(to right,#277FE9,#729DD0,#277FE9);
+   color: black;
+}
+#registro:hover{
+   background-image: linear-gradient(to right,#277FE9,#7050DF,#9561DB);
+   color: black;
+}
+#recomendar:hover{
+   background-image: linear-gradient(to right,#D346F5,#EC35BD,#D346F5);
+   color: black;
+}
+#recomendaciones:hover{
+   background-image: linear-gradient(to right,#D346F5,#AF53BE,#871DE5);
+   color: black;
+}
+
+#info:hover{
+   background-image: linear-gradient(to right,#871DE5,#704CA4,#871DE5);
+   color: black;
+}
+
+.tira-v{
+   position: absolute;
+   display: none;
+   list-style: none;
+   width: 200px;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tira-h li:hover .tira-v{
+   display: block;
+}
+
+
+section, footer{
+    font-family:links;
+    font-size: 30px;
+    margin: 30px auto;
+    width: 1200px;
+}
+
+
+#redes li{
+    display: inline-block;
+    padding: 10px
+    vertical-align: middle;
+}
+
+footer ul #link-ig{
+    font-family:links;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer #link-ig:hover{
+    color:purple;
+}
+</style>
